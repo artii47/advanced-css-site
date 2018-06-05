@@ -34,7 +34,13 @@
     &::after{
       background-color: #fff;
   }
-}
+} 
+
+  &--green{
+    background-image: linear-gradient(to right bottom, $color-primary-light, $color-primary-dark);
+    color: $color-white;
+    font-weight: 400;
+  }
 
   &::after {
     content: '';

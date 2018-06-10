@@ -117,7 +117,7 @@
           </div>
         </div>
       </section>
-      <section class='section-tours'>
+      <section class='section-tours' id='section-tours'>
         <div class="u-center-text u-margin-bottom-big">
           <h2 class="heading-secondary">
             Most popular tours
@@ -152,7 +152,7 @@
                         <p class="card__cta-price-only">Only</p>
                         <p class="card__cta-price-value">$293</p>
                       </div>
-                      <a href="#" class="btn btn--white">Book now!</a>
+                      <a href="#popup" class="btn btn--white">Book now!</a>
                     </div>
               </div>
             </div>
@@ -185,7 +185,7 @@
                         <p class="card__cta-price-only">Only</p>
                         <p class="card__cta-price-value">$293</p>
                       </div>
-                      <a href="#" class="btn btn--white">Book now!</a>
+                      <a href="#popup" class="btn btn--white">Book now!</a>
                     </div>
                   </div>
                 </div>
@@ -217,7 +217,7 @@
                         <p class="card__cta-price-only">Only</p>
                         <p class="card__cta-price-value">$293</p>
                       </div>
-                      <a href="#" class="btn btn--white">Book now!</a>
+                      <a href="#popup" class="btn btn--white">Book now!</a>
                     </div>
                   </div>
                 </div>
@@ -275,8 +275,94 @@
           </div>
 
       </section>
-     
+      <section class="section-book">
+        <div class="row">
+          <div class="book">
+            <div class="book-form">
+              <form action="#" class='book__form'>
+                  <h3 class=" heading-secondary u-margin-bottom-medium">
+                      Start booking now
+                  </h3>
+                <div class="form__group">
+                  <input type="text" class="form__input" placeholder="Full name" id='name' required>
+                  <label for="name" class="form__label">Full Name</label>
+                </div>
+                <div class="form__group">
+                  <input type="email" class="form__input" placeholder="Email address" id='email' required>
+                  <label for="email" class="form__label">Email address</label>
+                </div>
+
+                <div class="form__group">
+                  <div class="form__radio-group">
+                    <input type="radio" class='form__radio-input' id='small' name='size'>
+                    <label for="small" class='form__radio-label'>
+                      <span class='form__radio-button'></span>
+                      Small tour group
+                    </label>
+                  </div>
+                  <div class="form__radio-group">
+                    <input type="radio" class='form__radio-input' id='large' name='size'>
+                    <label for="large" class='form__radio-label'>
+                       <span class='form__radio-button'></span>
+                       Large tour group
+                    </label>
+                  </div>
+                </div>
+                <div class="form__group">
+                  <button type='submit' class="btn btn--green">
+                    Next step 
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
+    <footer class='footer'>
+      <div class="footer__logo-box">
+        <img src="./img/logo-green-2x.png" alt="Full logo" class='footer__logo'>
+      </div>
+      <div class="row">
+        <div class="col-1-of-2">
+          <div class="footer__navigation">
+            <ul class="footer__list">
+              <li class="footer__item">
+                <a href="#" class="footer__link">Company</a>
+                <a href="#" class="footer__link">Contact us</a>
+                <a href="#" class="footer__link">Carrers</a>
+                <a href="#" class="footer__link">Privacy</a>
+                <a href="#" class="footer__link">Terms</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-1-of-2">
+          <p class="footer__copyright">
+            Built for my <a href="#" class='footer__link'>Lorem ipsum dolor sit amet.</a> <a href="#" class='footer__link'>Lorem, ipsum dolor.</a>
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <div class="popup" id='popup'>
+      <div class="popup__content">
+        <div class="popup__left">
+          <img src="./img/nat-8.jpg" alt="" class='popup__img'>
+          <img src="./img/nat-9.jpg" alt="" class='popup__img'>
+        </div>
+        <div class="popup__right">
+          <a href="#section-tours" class='popup__close'>&times;</a>
+          <h2 class="heading-secondary u-margin-bottom-medium">Start booking</h2>
+          <h3 class="heading-tertiary">Important &ndash; please read gofdgh osdh sdfsdnp</h3>
+          <p class="popup__text">
+            Lorem ipsum dolor sit Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus debitis labore atque Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repudiandae laudantium nesciunt saepe cupiditate nisi nemo accusamus iure quae at sit. repellat, corporis sunt quisquam ab enim accusamus ex? amet consectetur adipisicing elit. Voluptates, incidunt qui eum eligendi quis quasi minima eaque obcaecati ipsa rerum ex facilis vitae tenetur neque, sit omnis voluptatum quisquam dicta.
+          </p>
+          <a href="#" class="btn btn--green">Book Now</a>
+        </div>
+        
+      </div>
+    </div>
  
 <!-- 
       <section class='grid-test'>

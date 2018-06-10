@@ -8,11 +8,16 @@
 @import 'base/utilities';
 
 @import 'pages/home';
-@import 'components/button';
-@import 'layout/header.scss';
+
 @import './layout/_grid.scss';
+@import './layout/_header.scss';
+@import './layout/_footer.scss';
+
+@import './components/_button.scss';
 @import './components/_composition.scss';
 @import './components/_feature-box.scss';
 @import './components/_card.scss';
 @import './components/_story.scss';
 @import './components/_bg-video.scss';
+@import './components/_form.scss';
+@import './components/_popup.scss';

@@ -85,7 +85,8 @@
     color: $color-white;
     border-bottom: none;
     box-shadow: .5rem .9rem 1rem rgba($color-black, .2);
-    padding: .2rem .4rem;
+    padding: .5rem;
+    border-radius: 5px;
   }
 
   &:active{

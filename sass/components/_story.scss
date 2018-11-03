@@ -14,7 +14,6 @@
   // } NOT WORKING
 
   &__shape{
-    
     width: 15rem;
     height: 15rem;
     float: left;
@@ -28,7 +27,6 @@
   &__img{
     height: 100%;
     transform: translateX(-4rem) scale(1.4);
-
     transition: all .3s ease-out;
   }
 

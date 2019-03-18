@@ -9,9 +9,9 @@
   font-size: $default-font-size;
   transform: skewX(-12deg);
 
-  // & > * {
-  //   transform: skewX(12deg);
-  // } NOT WORKING
+  //  & > * {
+  //    transform: skewX(0deg);
+  //  } 
 
   &__shape{
     width: 15rem;
@@ -46,11 +46,11 @@
     transition: all .3s ease-out;
     backface-visibility: hidden;
   }
-  
   &:hover &__caption{
     opacity: 1;
     transform: translate(-50%, -50%);
   }
+  
 
   &:hover &__img{
     transform: translateX(-4rem) scale(1);

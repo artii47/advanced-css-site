@@ -39,6 +39,7 @@
       text-transform: uppercase;
       display: inline-block;
       transition: all .3 ease-out;
+      backface-visibility: hidden;
     }
 
     &:not(:last-child){
@@ -48,7 +49,7 @@
     &:hover,
     &:visited{
       color: $color-primary;
-      transform: scale(1.3);
+      transform: scale(1.1);
     }
     transition: all .1s;
   }

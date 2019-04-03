@@ -5,9 +5,20 @@
   background-color: rgba($color-white, .8);
   border-radius: 3px;
   padding: 6rem;
-  padding-left: 9rem;
   font-size: $default-font-size;
   transform: skewX(-12deg);
+
+  @include respond(tab-port){
+    width: 100%;
+    margin-left: -3rem;
+    padding: 1rem 4rem;
+    backface-visibility: hidden;
+    overflow: hidden;
+  }
+
+  @include respond(phone){
+    transform: skewX(0);
+  }
 
   //  & > * {
   //    transform: skewX(0deg);
@@ -22,16 +33,26 @@
     clip-path: circle(50% at 50% 50%);
     transform: translateX(-3rem) skewX(12deg);
     position: relative;
+
+    @include respond(phone){
+      transform: translateX(-3rem) skewX(0);
+    }
   }
 
   &__img{
     height: 100%;
     transform: translateX(-4rem) scale(1.4);
     transition: all .3s ease-out;
+    backface-visibility: hidden;
+    transition: all .5s;
   }
 
   &__text{
     transform: skewX(12deg);
+
+    @include respond(phone){
+      transform: translateX(-3rem) skewX(0);
+    }
   }
 
   &__caption{

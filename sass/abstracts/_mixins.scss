@@ -15,9 +15,9 @@
 
 // medias
 // 0 - 600px PHONE
-// 600- 900 TABELT PORTRAIT
+// 600- 900 TABLET PORTRAIT
 // 900-1200 TABLET LANDSCAPE
-// 1200 - 1800 normal tyles
+// 1200 - 1800 normal styles
 // 1800 +  DESKTOP BIG
 
 // $breakpoint arguments
@@ -28,6 +28,8 @@
 
 
 //1em = 16px
+
+ // ORDER: base + typography > general layout + grid > page layout > components
 
 @mixin respond($breakpoint){
   @if($breakpoint == phone){

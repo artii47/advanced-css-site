@@ -12,8 +12,20 @@
 
   transition: all .3s ease-out;
 
+  @include respond(tab-port){
+    
+  }
+
   &__content{
     @include absCenter;
+
+    @include respond(tab-port){
+      width: 90%;
+    }
+
+    @include respond(phone){
+      width: 80%;
+    }
 
     width: 75%;
     background-color: $color-white;
@@ -30,6 +42,10 @@
     width: 33.3333%;
     display: table-cell;
     vertical-align: middle;
+
+    @include respond(phone){
+      display: none;
+    }
   }
 
   &__right{
@@ -37,6 +53,11 @@
     display: table-cell;
     vertical-align: middle;
     padding: 3rem 5rem;
+
+    @include respond(phone){
+      width: 100%;
+      padding: 1rem 3rem;
+    }
   }
 
   &__img{
@@ -51,6 +72,16 @@
     column-count: 2;
     column-gap: 4rem;
     column-rule: 1px solid $color-grey-dark-2;
+
+    @include respond(phone){
+      line-height: 1.4;
+    }
+  }
+
+  &__btn{
+    @include respond(phone){
+      text-align: center;
+    }
   }
 
   &:target{

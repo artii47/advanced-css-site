@@ -1,3 +1,3 @@
 # advanced-css-site
 
-to run this project call npm start
+to run this project call npm install then npm start
